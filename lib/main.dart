@@ -19,13 +19,27 @@ class LabClass05 extends StatelessWidget{
 
           elevation: 23,
         ),
-        body: Container(
-          alignment: Alignment.center,
-          
-          color: const Color.fromARGB(155, 252, 3, 3),
-          margin: EdgeInsets.all(100),
-          padding: EdgeInsets.all(30),
-          child: Text("This is a Container"),
+        body: Row(
+          children: [
+            Text("HI ",
+              style: TextStyle(
+                color: Colors.yellow,
+                fontSize: 30,
+              ),
+            ),
+            Text("This is ",
+              style:  TextStyle(
+                color: Colors.blue,
+                fontSize: 50,
+              ),
+            ),
+            Text("flutter ",
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 70,
+              ),  
+            ),
+          ],
         )
       )
     );
