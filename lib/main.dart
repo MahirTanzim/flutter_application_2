@@ -21,6 +21,11 @@ class LabClass05 extends StatelessWidget{
         ),
         body: Row(
           children: [
+            Icon(
+              Icons.shop,
+              size: 50,
+              color: Colors.green,
+            ),
             Text("HI ",
               style: TextStyle(
                 color: Colors.yellow,
