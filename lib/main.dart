@@ -9,22 +9,23 @@ class LabClass05 extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      title : "Hi",
+      title : "Basic Flutter UI - 02",
       home: Scaffold(
         appBar: AppBar(
           
-          title: Text("Hi this is AppBar"),
+          title: Text("Basic Flutter UI - 2"),
           centerTitle: true,
-          
+          backgroundColor:  const Color.fromARGB(155, 36, 2, 254),
+
           elevation: 23,
         ),
         body: Container(
           alignment: Alignment.center,
-          child: Text("This is a Container"),
+          
           color: const Color.fromARGB(155, 252, 3, 3),
           margin: EdgeInsets.all(100),
           padding: EdgeInsets.all(30),
-          
+          child: Text("This is a Container"),
         )
       )
     );
