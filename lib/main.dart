@@ -19,37 +19,25 @@ class LabClass05 extends StatelessWidget{
 
           elevation: 23,
         ),
-        body: Row(
-          children: [
-            Icon(
-              Icons.star,
-              size: 50,
-              color: Colors.grey,
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Container(
+            height: 600,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: List.generate(
+                100,
+                (index) => Icon(
+                  Icons.star,
+                  size: index.toDouble(),
+                  color: Colors.red,
+                )
+              ),
             ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: Colors.grey,
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: Colors.grey,
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: Colors.grey,
-            ),
-            Icon(
-              Icons.star_border,
-              size: 50,
-              color: Colors.grey,
-            ),
-          
-          ],
-        )
-      )
+          ),
+        ),
+      ),
     );
   }
 }
